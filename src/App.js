@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: 'ad2f2afd4507438bc39821094618a6a92e956eca572e1d8b807a3e2338fdd0dc/stage',
+      key: 'enter your alan ai generated key here',
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
