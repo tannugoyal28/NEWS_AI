@@ -31,7 +31,7 @@ export default makeStyles((theme) => ({
     padding: '3%',
     borderRadius: 10,
     color: 'white',
-    backgroundColor: 'rgba(21, 101, 192)',
+    backgroundColor: '#a4796d',
     margin: '0 12px',
     textAlign: 'center',
     height: '25vmin',
@@ -55,6 +55,7 @@ export default makeStyles((theme) => ({
   },
   logoContainer: {
     padding: '0 5%',
+    color:'#80461b',
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',

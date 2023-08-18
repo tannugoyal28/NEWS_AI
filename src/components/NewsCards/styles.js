@@ -11,7 +11,9 @@ export default makeStyles({
     padding: '10%',
     borderRadius: 10,
     color: 'white',
+    boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px',
   },
+
   infoCard: {
     display: 'flex', flexDirection: 'column', textAlign: 'center',
   },

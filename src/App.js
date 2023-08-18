@@ -3,6 +3,7 @@ import { Typography } from '@material-ui/core';
 import wordsToNumbers from 'words-to-number';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
+
 import NewsCards from './components/NewsCards/NewsCards';
 import useStyles from './styles';
 
@@ -15,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     alanBtn({
-      key: 'enter your alan ai generated key here',
+      key: process.env.REACT_APP_KEY ,
       onCommand: ({ command, articles, number }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
@@ -50,9 +51,10 @@ const App = () => {
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKCY77TSeBUowKTfLnO2SEOPDUTWROUWHrg&usqp=CAU" className={classes.alanLogo} alt="logo" />
+        <h2>NEWS-AI</h2>
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
+      {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen} /> */}
     </div>
   );
 };
